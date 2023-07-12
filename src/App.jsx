@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Article from "./components/Article";
-import Header from "./components/Header";
 import "./index.css";
 import Layout from "./Layout";
+import IndexPage from "./Pages/IndexPage";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       {/* Main Layout  */}
       <Route path="/" element={<Layout />}>
         {/* Routes */}
-        <Route index element={<Article />} />
-        <Route path={"/login"} element={<div className="">Login Page</div>} />
+        <Route index element={<IndexPage />} />
+        <Route path={"/login"} element={<LoginPage />} />
         {/* Routes End */}
       </Route>
     </Routes>
