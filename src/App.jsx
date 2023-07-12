@@ -1,13 +1,20 @@
+import { Route, Routes } from "react-router-dom";
 import Article from "./components/Article";
 import Header from "./components/Header";
 import "./index.css";
+import Layout from "./Layout";
 
 function App() {
   return (
-    <div className="p-3 max-w-[700px] my-0 mx-auto">
-      <Header />
-      <Article />
-    </div>
+    <Routes>
+      {/* Main Layout  */}
+      <Route path="/" element={<Layout />}>
+        {/* Routes */}
+        <Route index element={<Article />} />
+        <Route path={"/login"} element={<div className="">Login Page</div>} />
+        {/* Routes End */}
+      </Route>
+    </Routes>
   );
 }
 
