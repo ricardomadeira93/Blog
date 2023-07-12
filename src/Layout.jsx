@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="p-3 max-w-[700px] my-0 mx-auto">
+    <div className="p-3 max-w-[700px] my-0 mx-auto box-border">
       <Header />
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };
