@@ -5,8 +5,6 @@ const IndexPage = () => {
   return (
     <div>
       <Article />
-      <Article />
-      <Article />
     </div>
   );
 };
