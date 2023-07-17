@@ -59,4 +59,6 @@ app.post("/logout", (req, res) => {
   res.cookie("token", "").json("ok");
 });
 
+app.post("/post", (res, req) => {});
+
 app.listen(3000);
