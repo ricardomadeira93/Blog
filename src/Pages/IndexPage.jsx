@@ -11,6 +11,8 @@ export default function IndexPage() {
     });
   }, []);
   return (
-    <>{posts.length > 0 && posts.map((post) => <Post {...post} />)}</>
+    <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+      {posts.length > 0 && posts.map((post) => <Post {...post} />)}
+    </div>
   );
 }
